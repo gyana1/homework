@@ -1,6 +1,6 @@
 body{
- 	width: 100%;
- 	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
  .top{
@@ -16,18 +16,18 @@ body{
 }
 
 .logo img {
-	position: absolute;
-	
+  position: absolute;
+  
 }
 
 .menu{
   float: right;
   margin:  0 10% 0 2%;
-  position: static;	
+  position: static; 
 }
 
 .menu ul{
-	padding-left: 0px;
+  padding-left: 0px;
 }
 
 .menu li{ 
@@ -38,8 +38,8 @@ body{
     
  }
 .menu li>a{
-	text-decoration: none;
-	color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .menu li:hover { 
   font-size: 18px;
@@ -62,25 +62,26 @@ body{
   text-align: center;
 }
 .subtext{
-	font-size: 16px;
-	color: #fff;
-	text-align: center;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
 }
-/*----------------------------------*/
+
 .slider{
+  width: 75%;
   margin: 0 auto;
-  width: 50%;
-
+  overflow: hidden;
 }
 
-.comp {		
-	max-width: 100%
-
+.slider img {   
+width: 400px;
+height: 300px;
 }
 .btns{
   margin: 20% 0 10% 0;
   padding: 0 5%;
   float: left;
+
 }
 button{
   width: 150px;
@@ -103,22 +104,20 @@ button:first-child:hover{
 
 }
 button:last-child{
-	background-color: #fff;
+  background-color: #fff;
 }
 button:last-child:hover{
-	background-color: #ff5959;
-	color: #fff;
+  background-color: #ff5959;
+  color: #fff;
 }
 
 /*---------------------------------------*/
 .our_service{     
-	background-color: #f0f0f0;
-
+  background-color: #f0f0f0;
 }
 
 .title  {
-  width: 50%;
-  margin: 0 auto;
+  margin: 0 10%;
   font-size: 30px;
   color: #000;
   padding: 5%;
@@ -132,6 +131,12 @@ button:last-child:hover{
   padding: 5%;
   padding-bottom: 10px;
   text-align: center;
+}
+
+.content{
+  margin: 0 auto;
+  width: 50%;
+  overflow: hidden;
 }
 
 .separator {
@@ -173,12 +178,6 @@ button:last-child:hover{
   border-color: grey;
 }
 
-.content{
-  overflow: hidden;
-  padding:10%;
-  padding-top: 50px;
-
-}
 
 
 .box{
@@ -201,7 +200,8 @@ button:last-child:hover{
 /*---------------------------------------*/
 .our_portfolio{
   background-color: #ff5959;
- 
+  padding-bottom: 10%;
+  overflow: hidden;
 }
 
 .con1 {
@@ -269,68 +269,214 @@ button:last-child:hover{
   padding-bottom: 10%;
   overflow: hidden;
 }
+
 .circles{
   width: 50%;
-  margin:0 auto;
+  margin: 0 auto;
 
 
 }
-.block_crl{
+.bx_circle{
   width: 23%;
   margin:1%;
-  display: block;
-  float: left;
-
-
-}
-.circle{
-  min-width: 160px;
-  min-height: 160px;  
-  margin: 10px;
-  background: #fff;
-  border:2px solid;
-  border-color: red;
-  -moz-border-radius: 80px;
-  -webkit-border-radius: 80px;
-  border-radius: 80px;
-  float: left;
-
-}
-
-.block_crl span{
-  width: 100%;
+  float: left;  
   text-align: center;
-  float: left;
 }
-/*--------------------------------------------*/
+
+
+.bx_circle p{
+  font-size: 12px;
+}
+
+
+.circle{
+  width: 160px;
+  height: 160px;
+  background-color: #fff;
+  border: 2px solid red;
+  border-radius: 80px;
+  margin: auto;
+
+}
+
+
+@font-face {
+    font-family: 'si';
+    src: url('PATH_TO/socicon.eot');
+    src: url('PATH_TO/socicon.eot?#iefix') format('embedded-opentype'),
+         url('PATH_TO/socicon.woff') format('woff'),
+         url('PATH_TO/socicon.ttf') format('truetype'),
+         url('PATH_TO/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    margin-right: 8px;
+    color: #ffffff;
+    background-color: none;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter {
+    background-color: #4da7de;
+}
+.soc-twitter:before {
+    content:'t';
+}
+.soc-facebook {
+    background-color: #3e5b98;
+}
+.soc-facebook:before {
+    content:'f';
+}
+.soc-google {
+    background-color: #d93e2d;
+}
+.soc-google:before {
+    content:'g+';
+}
+.soc-pinterest {
+    background-color: #c92619;
+}
+.soc-pinterest:before {
+    content:'P';
+}
+.soc-linkedin {
+    background-color: #3371b7;
+}
+.soc-linkedin:before {
+    content:'in';
+}
+
+
+/*---------------------------------------*/
 .news{
   background-color: #ff5959;
   padding-bottom: 10%;
   overflow: hidden;
-}
 
-.article_content{
+}
+.news_content{
   width: 50%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
-.article{
-  width: 33%;
+.articles{
+  width: 31%;
+  margin: 1%;
   float: left;
 
 }
-/*-------------------------------------------------*/
+.article img{
+  width: 100%;
+}
+
+.textN span{
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+.textN{
+  font-size: 12px;
+  text-align: justify;
+  color: #fff;
+}
+
 .contact{
   background-color: #f0f0f0;
   padding-bottom: 10%;
-  overflow: hidden;
+  overflow: hidden;}
+  .form{
+    width: 50%;
+    margin: 0 auto;
+  }
 
-}
-.box_contact{
-  width: 50%;  
-  margin: 0 auto;
+/*------------------------------------*/
+ @media  screen and (max-width: 768px) {
 
-}
-.form input{
-  margin:10px;
+  .slider img{   
+    width:100%;
+  }
+    .logo{
+      display: none;
+    }
+
+    .box{
+      width: 100%;
+    }
+      .con1{
+        width: 75%;
+      }
+    .big{
+      width: 100%;
+    }
+    .small{
+    width: 48%;
+    float: left;
+    }
+    .circles{
+      width: 75%;
+
+    }
+    .bx_circle{
+      width: 48%;
+    }
+   .soc li a{
+            border-radius: 25px;
+                width: 50px;
+    height: 50px;
+    line-height: 50px;
+    }
+
+    .soc *a::before{
+      font-size: 25px;
+    }
 }
